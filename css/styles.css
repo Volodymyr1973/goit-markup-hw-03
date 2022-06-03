@@ -1,4 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* -----Глобальные----- */
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -11,6 +18,7 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   color: var(--primary-text-color);
+  margin: 0;
 }
 
 p,
@@ -26,6 +34,7 @@ h6 {
 ul {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 .title {
@@ -47,15 +56,46 @@ ul {
   cursor: pointer;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 /* -----Хедер----- */
 
 .header {
   background-color: #ffffff;
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----Линки хедера----- */
+
+.header-lists .link,
+.header-contact-lists .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* -----Блок навигации----- */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* -----Логотип в хедере----- */
 
 .logo {
+  margin-right: 93px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -78,6 +118,19 @@ ul {
   color: var(--accent-color);
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 50px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
 .header-lists,
 .header-item-link {
   font-weight: 500;
@@ -98,6 +151,16 @@ ul {
 
 /* -----Контакты хедера----- */
 
+.nav-contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-contact-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -114,6 +177,16 @@ ul {
 .hero {
   background: #2f303a;
 }
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -125,6 +198,8 @@ ul {
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -139,8 +214,6 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* -----:hover есть, но не активный в проекте----- */
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -165,6 +238,10 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.work-lists-div {
+  display: flex;
 }
 
 .work-title {
