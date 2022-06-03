@@ -244,10 +244,13 @@ ul {
   margin: -1px;
 }
 
+.work-lists {
+  padding-bottom: 94px;
+}
+
 .work-lists-div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .work-item:not(:last-child) {
@@ -301,18 +304,36 @@ ul {
   border: 5px solid var(--accent-color);
 }
 
+.projects-lists {
+  padding-bottom: 94px;
+}
+
 /* -----Наша команда----- */
 
 .team {
   background: #f5f4fa;
 }
 
+.team .container {
+  padding: 94px 15px;
+}
+
 .team-mean-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.team-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-item {
