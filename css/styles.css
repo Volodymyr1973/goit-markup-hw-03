@@ -365,8 +365,16 @@ ul {
 }
 
 /* -----Адрес----- */
+.address {
+  padding: 60px 0;
+}
+
+.address .link {
+  display: block;
+}
 
 .logo-bottom {
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -382,6 +390,10 @@ ul {
 .logo-bottom:focus,
 .logo-web:focus {
   color: var(--accent-color);
+}
+
+.address-item {
+  margin-top: 9px;
 }
 
 .address-text {
