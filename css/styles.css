@@ -227,6 +227,10 @@ ul {
 .work {
   background: #ffffff;
 }
+.work .container {
+  padding-top: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -242,9 +246,16 @@ ul {
 
 .work-lists-div {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -264,11 +275,25 @@ ul {
   background-color: #ffffff;
 }
 
+.projects-div {
+  display: flex;
+}
+
 .projects-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.projects-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.projects-link,
+.projects-photo {
+  display: block;
 }
 
 .projects-photo:hover,
