@@ -277,16 +277,21 @@ ul {
   background-color: #ffffff;
 }
 
-.projects-div {
-  display: flex;
-}
-
 .projects-title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.projects-div {
+  display: flex;
+  /* justyfy-content: spase-between; */
+}
+
+.projects-lists {
+  padding-bottom: 94px;
 }
 
 .projects-item:not(:last-child) {
@@ -301,10 +306,6 @@ ul {
 .projects-photo:hover,
 .projects-link:focus {
   border: 5px solid var(--accent-color);
-}
-
-.projects-lists {
-  padding-bottom: 94px;
 }
 
 /* -----Наша команда----- */
@@ -336,6 +337,7 @@ ul {
 }
 
 .team-item {
+  padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -355,7 +357,6 @@ ul {
   color: var(--title-text-color);
 }
 .team-text {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
