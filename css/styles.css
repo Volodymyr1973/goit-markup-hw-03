@@ -428,7 +428,31 @@ ul {
   background-color: #ffffff;
 }
 
+/* -----Портфолищ хедер----- */
+
+.header.portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+/* -----Портфолио кнопки----- */
+
+.btn-lists {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.btn-item + .btn-item {
+  margin-left: 8px;
+}
+
 .btn {
+  display: inline-block;
+  border: none;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -444,14 +468,39 @@ ul {
   border-radius: 4px;
 }
 
+/* -----Портфолио карточки----- */
+
+.portfolio-lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .portfolio-item:hover,
 .portfolio-item:focus {
   background-color: #e5e5e5;
+}
+
+.portfolio-item .portfolio-link {
+  display: block;
+}
+
+.portfolio-link img {
+  display: block;
 }
 
 .portfolio-title {
