@@ -38,6 +38,11 @@ ul {
 }
 
 .title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
@@ -62,6 +67,10 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding: 94px 0;
 }
 /* -----Хедер----- */
 
@@ -175,9 +184,6 @@ ul {
 /* -----Герой----- */
 .hero {
   background: #2f303a;
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -199,6 +205,8 @@ ul {
 .hero-btn {
   display: block;
   margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -221,12 +229,10 @@ ul {
   border-radius: 4px;
 }
 
-/* -----Наша работа----- */
+/* -----Особенности работы----- */
 /* -----? В проекте bg #e5e5e5, фактически #ffffff----- */
 .work {
   background: #ffffff;
-}
-.work .container {
   padding-top: 94px;
 }
 
@@ -241,10 +247,6 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.work-lists {
-  padding-bottom: 94px;
 }
 
 .work-lists-div {
@@ -275,14 +277,7 @@ ul {
 
 .projects {
   background-color: #ffffff;
-}
-
-.projects-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  padding: 94px 0;
 }
 
 .projects-div {
@@ -312,22 +307,10 @@ ul {
 
 .team {
   background: #f5f4fa;
+  padding: 94px 0;
 }
 
-.team .container {
-  padding: 94px 15px;
-}
-
-.team-mean-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.team-div {
+.team-lists {
   display: flex;
   justify-content: space-between;
 }
@@ -337,14 +320,13 @@ ul {
 }
 
 .team-item {
-  padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo {
-  margin-bottom: 30px;
+.team-div {
+  padding: 30px 0;
 }
 
 .team-title {
@@ -368,18 +350,11 @@ ul {
 
 .footer {
   background: #2f303a;
-}
-
-/* -----Адрес----- */
-.address {
   padding: 60px 0;
 }
 
-.address .link {
-  display: block;
-}
-
 .logo-bottom {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
@@ -397,6 +372,8 @@ ul {
 .logo-web:focus {
   color: var(--accent-color);
 }
+
+/* -----Адрес----- */
 
 .address-item {
   margin-top: 9px;
@@ -428,7 +405,7 @@ ul {
   background-color: #ffffff;
 }
 
-/* -----Портфолищ хедер----- */
+/* -----Портфолио хедер----- */
 
 .header.portfolio {
   border-bottom: 1px solid #ececec;
@@ -439,8 +416,7 @@ ul {
 .btn-lists {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .btn-item + .btn-item {
@@ -476,11 +452,9 @@ ul {
 }
 
 .portfolio-item {
-  max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -496,8 +470,18 @@ ul {
   background-color: #e5e5e5;
 }
 
+/* -----Поставил display: block; на .portfolio-photo, так как был
+промежуток между border и фото----- */
+
+.portfolio-photo {
+  display: block;
+}
+
 .portfolio-desc {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-title {
