@@ -81,6 +81,7 @@ img {
 
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -402,12 +403,6 @@ img {
 
 .portfolio-main {
   background-color: #ffffff;
-}
-
-/* -----Портфолио хедер----- */
-
-.header.portfolio {
-  border-bottom: 1px solid #ececec;
 }
 
 /* -----Портфолио кнопки----- */
