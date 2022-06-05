@@ -37,6 +37,11 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -249,13 +254,13 @@ ul {
   margin: -1px;
 }
 
-.work-lists-div {
+.work-lists {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
-.work-item:not(:last-child) {
-  margin-right: 30px;
+.work-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .work-title {
@@ -280,27 +285,21 @@ ul {
   padding: 94px 0;
 }
 
-.projects-div {
-  display: flex;
-  /* justyfy-content: spase-between; */
-}
-
 .projects-lists {
-  padding-bottom: 94px;
+  display: flex;
+  gap: 30px;
 }
 
-.projects-item:not(:last-child) {
+.projects-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+/* .projects-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.projects-link,
-.projects-photo {
-  display: block;
-}
+} */
 
 .projects-photo:hover,
 .projects-link:focus {
-  border: 5px solid var(--accent-color);
 }
 
 /* -----Наша команда----- */
@@ -312,11 +311,11 @@ ul {
 
 .team-lists {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
+.team-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .team-item {
@@ -437,7 +436,8 @@ ul {
   color: var(--title-text-color);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: #ffffff;
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -449,32 +449,26 @@ ul {
 .portfolio-lists {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc((100% -60px) / 3)
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
   background: #ffffff;
 }
 
-.portfolio-item:nth-child(3n) {
+/* .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0;
-}
+} */
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  background-color: #e5e5e5;
-}
-
-/* -----Поставил display: block; на .portfolio-photo, так как был
-промежуток между border и фото----- */
-
-.portfolio-photo {
-  display: block;
+.portfolio-link:hover,
+.portfolio-link:focus {
 }
 
 .portfolio-desc {
